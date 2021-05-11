@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição de Evento</title>
+</head>
+<body>
+    
+    <h1>Inscrição de Evento</h1>
+
+    <form action="Inscrever" method="post">
+        <fieldset>
+            <legend>Evento</legend>
+            <label for="idNome">Nome: </label>
+            <input type="text" name="nome" id="idNome"> <br>
+
+            <label for="idEmail">E-Mail: </label>
+            <input type="text" name="email" id="idEmail"> <br>
+
+            <label for="idTelefone">Telefone: </label>
+            <input type="text" name="telefone" id="idTelefone"> <br>
+
+            <label for="idDataNascto">Data Nascimento: </label>
+            <input type="date" name="dataNasc" id="idDataNascto"> <br>
+
+            <label for="idEmpresa">Empresa</label>
+            <input type="text" name="empresa" id="idEmpresa"> <br>
+
+            <br>
+
+            <fieldset>
+                <legend>Cargo</legend>
+                <label for="idCargo">Proprietário/Sócio</label>
+                <input type="radio" name="cargo" id="idCargo" value="Proprietário/Comercial"> <br>
+                <label for="idCargo">Presidência</label>
+                <input type="radio" name="cargo" id="idCargo" value="Presidência"> <br>
+                <label for="idCargo">Diretoria</label>
+                <input type="radio" name="cargo" id="idCargo" value="Diretoria"> <br>
+                <label for="idCargo">Gerencia</label>
+                <input type="radio" name="cargo" id="idCargo" value="Gerencia"> <br>
+                <label for="idCargo">Supervisão</label>
+                <input type="radio" name="cargo" id="idCargo" value="Supervisão"> <br>
+                <label for="idCargo">Outro</label>
+                <input type="radio" name="cargo" id="idCargo" value="Outro"> <br>
+            </fieldset>
+
+            <br>
+
+            <label for="idCidade">Cidade</label>
+            <input type="text" name="cidade" id="idCidade"> <br>
+
+            <br>
+
+            <fieldset>
+                <legend>UF</legend>
+                <select name="uf" id="idUf">
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Bahia">Bahia</option>
+                    <option value="Goiais">Goiais</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Paraná">Paraná</option>
+                </select>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Tipo Inscrição</legend>
+                <label for="idTipoInscricao">Pessoa Física</label>
+                <input type="radio" name="tipoInscricao" id="idtipoInscricao" value="Pessoa Física"> <br>
+                <label for="idTipoInscricao">Pessoa Jurídica</label>
+                <input type="radio" name="tipoInscricao" id="idtipoInscricao" value="Pessoa Jurídica">
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Como ficou Sabendo? </legend>
+                <label for="idComoFicouSabendo">Revistas</label>
+                <input type="checkbox" name="ficouSabendo" id="idComoFicouSabendo" value="Revistas"> <br>
+                <label for="idComoFicouSabendo">Jornais</label>
+                <input type="checkbox" name="ficouSabendo" id="idComoFicouSabendo" value="Jornais"> <br>
+                <label for="idComoFicouSabendo">Televisão</label>
+                <input type="checkbox" name="ficouSabendo" id="idComoFicouSabendo" value="Televisão"> <br>
+                <label for="idComoFicouSabendo">Internet</label>
+                <input type="checkbox" name="ficouSabendo" id="idComoFicouSabendo" value="Internet"> <br>
+                <label for="idComoFicouSabendo">Patrocinadores</label>
+                <input type="checkbox" name="ficouSabendo" id="idComoFicouSabendo" value="Patrocinadores"> <br>
+                <label for="idComoFicouSabendo">Outros</label>
+                <input type="checkbox" name="ficouSabendo" id="idComoFicouSabendo" value="Outros"> <br>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Qual interesse no evento?</legend>
+                <label for="idQualInteresse">Palestras</label>
+                <input type="checkbox" name="qualInteresse" id="idQualInteresse" value="Palestras"> <br>
+                <label for="idQualInteresse">Workshops</label>
+                <input type="checkbox" name="qualInteresse" id="idQualInteresse" value="Workshops"> <br>
+                <label for="idQualInteresse">Estandes</label>
+                <input type="checkbox" name="qualInteresse" id="idQualInteresse" value="Estandes"> <br>
+                <label for="idQualInteresse">Treinamentos</label>
+                <input type="checkbox" name="qualInteresse" id="idQualInteresse" value="Treinamentos"> <br>
+                <label for="idQualInteresse">Outros</label>
+                <input type="checkbox" name="qualInteresse" id="idQualInteresse" value="Outros"> <br>
+            </fieldset>
+
+            <br>
+
+            <label for="idNomeCracha">Nome Crachá:</label>
+            <input type="text" name="nomeCracha" id="idNomeCracha"> <br>
+
+            <br>
+
+            <fieldset>
+                <legend>Deseja receber informações por email? </legend>
+                <label for="idInfosEmail">Sim</label>
+                <input type="checkbox" name="sim" id="idInfosEmail" value="Sim">
+                <label for="idInfosEmail">Não</label>
+                <input type="checkbox" name="não" id="idInfosEmail" value="não">
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Deseja receber informações por SMS? </legend>
+                <label for="idInfosSMS">Sim</label>
+                <input type="checkbox" name="sim" id="idInfosSMS" value="Sim">
+                <label for="idInfosSMS">Não</label>
+                <input type="checkbox" name="não" id="idInfosSMS" value="não">
+            </fieldset>
+
+            <br>
+
+            <label for="idComentariosGerais">Comentários Gerais: </label> <br>
+            <textarea name="" id="comentariosGerais" cols="70" rows="10"></textarea> <br>
+
+            <br>
+            
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+    </form>
+</body>
+</html>

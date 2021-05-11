@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contato</title>
+</head>
+<body>
+
+    <h1>Agenda de Contato</h1>
+    
+    <form action="agendar" method="post">
+        <fieldset>
+            <legend>Agenda de Contato</legend>
+
+            <label for="idNome">Nome: </label> 
+            <input type="text" name="nome" id="idNome"> <br>
+
+            <label for="idEmail">E-mail: </label> 
+            <input type="email" name="email" id="idEmail"> <br>
+
+            <br>
+
+            <fieldset>
+                <legend>Tipo E-mail: </legend>
+                <label for="idTipoEmail">Comercial</label>
+                <input type="radio" name="tipoEmail" id="idTipoEmail" value="Comercial">
+                <label for="idTipoEmail">Pessoal</label>
+                <input type="radio" name="tipoEmail" id="idTipoEmail" value="Pessoal">
+            </fieldset>
+            
+            <br>
+
+            <fieldset>
+                <legend>Cargo</legend>
+                <select name="cargo" id="idCargo">
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="Presidente">Presidente</option>
+                    <option value="Vice-Presidente">Vice-Presidente</option>
+                    <option value="Diretor">Diretor</option>
+                    <option value="Gerente">Gerente</option>
+                    <option value="Supervisor">Supervisor</option>
+                    <option value="Assistente">Assistente</option>
+                </select>
+            </fieldset>
+
+            <br>
+
+            <label for="idEmpresa">Empresa</label>
+            <input type="text" name="empresa" id="idEmpresa"> <br>
+
+            <label for="idTelComercial">Tel. Comercial</label>
+            <input type="text" name="telCom" id="idTelComercial"> <br>
+
+            <label for="idTelCelular">Tel. Celular</label>
+            <input type="text" name="telCel" id="idTelCelular"> <br>
+
+            <br>
+
+            <fieldset>
+                <legend>Tipo Contato:</legend>
+                <label for="idComercial">Comercial</label>
+                <input type="checkbox" name="tipoContato" id="idComercial">
+                <label for="idPessoal">Pessoal</label>
+                <input type="checkbox" name="tipoContato" id="idPessoal">
+            </fieldset>
+
+            <br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+                
+        </fieldset>
+    </form>
+</body>
+</html>
